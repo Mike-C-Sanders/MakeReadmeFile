@@ -1,0 +1,22 @@
+{
+  "name": "makereadmefile",
+  "version": "1.0.0",
+  "description": "An application to create professional readme files through the terminal, running Node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mike-C-Sanders/MakeReadmeFile.git"
+  },
+  "author": "Mike Sanders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mike-C-Sanders/MakeReadmeFile/issues"
+  },
+  "homepage": "https://github.com/Mike-C-Sanders/MakeReadmeFile#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}

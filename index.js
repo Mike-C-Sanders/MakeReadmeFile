@@ -60,10 +60,11 @@ const questions = [
         message: `What's your email address?`,
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: `What type of licensing will you be using?\n`,
-        choices: ['MIT', 'GNU', 'Existing Project/Community'],
+        choices: ['None', 'MIT', 'GNU', 'Existing Project/Community'],
+        
     },
     {
         type: 'input',

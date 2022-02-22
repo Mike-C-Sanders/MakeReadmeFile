@@ -9,6 +9,55 @@ const questions = [
         name: 'projectTitle',
         message: `What's the title of your project?`,
     },
+    {
+        type: 'input',
+        name: 'motive',
+        message: `What was your motivation for creating this project?`,
+    },
+    {
+        type: 'input',
+        name: 'whyBuild',
+        message: `Why did you build this project?`,
+    },
+    {
+        type: 'input',
+        name: 'problemSolved',
+        message: 'What does this problem solve?',
+    },
+    {
+        type: 'input',
+        name: 'learnings',
+        message: 'What did you learn?',
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What are the steps required to install your project? \n Provide a step-by-step description of how to get the development environment running.'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: `Provide instructions and examples for use. Include screenshots as needed.`
+    },
+    {
+        type: 'input',
+        name: 'credits',
+        message: 'List your collaborators, if any, with links to their GitHub profiles.',
+    },
+    {
+        type: 'input',
+        name: 'contribute',
+        message: 'How can others contribute to this project.'
+    },
+    {
+        type: 'input',
+        name: 'gitHubUser',
+        message: `What's your GitHub User Name?`,
+    },
+    {
+        type: 'input',
+
+    }
 ];
 
 const promptUser = () => {

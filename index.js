@@ -1,6 +1,7 @@
 //Application is using Inquirer to prompt the user and FileSystem(Fs) To create/generate the Readme Doc.
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./Utils/generateMarkDown');
 
 // An array of questions for user input
 const questions = [
@@ -73,15 +74,23 @@ const questions = [
     }
 ];
 
+//function that will be called to prompt the user to answer the questions from the above array
 const promptUser = () => {
     return inquirer.prompt(questions);
 }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+//function to initialize app
+function init() {
+    //initiate the inquirer questions
+    promptUser()
+    //generate the markdown file using writefilesync
+    .then((answers) = () => fs.writeFileSync('README.md', generateMarkdown(answers)))
+    //print to the console that the promise was returned successfully 
+    .then(() => console.log('Your Readme File was Successfully Created!'))
+    //catch all errors
+    .catch((err) => console.error(err));
+}
 
 // Function call to initialize app
 init();

@@ -6,7 +6,7 @@ const fs = require('fs');
 const questions = [
     {
         type: 'input',
-        name: 'projectTitle',
+        name: 'title',
         message: `What's the title of your project?`,
     },
     {
@@ -16,12 +16,12 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'whyBuild',
+        name: 'build',
         message: `Why did you build this project?`,
     },
     {
         type: 'input',
-        name: 'problemSolved',
+        name: 'solve',
         message: 'What does this problem solve?',
     },
     {
@@ -64,6 +64,11 @@ const questions = [
         name: 'license',
         message: `What type of licensing will you be using?\n`,
         choices: ['MIT', 'GNU', 'Existing Project/Community'],
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'What tests were written for this application?'
     }
 ];
 

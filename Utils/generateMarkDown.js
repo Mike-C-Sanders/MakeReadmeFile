@@ -2,9 +2,6 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     switch(license){
-        case null:
-            return '';
-        
         case 'None':
             return '';
 
@@ -23,17 +20,63 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+    switch(license){
+        case 'None':
+            return '';
+        case 'MIT':
+            return '[MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)'
+        case 'GNU':
+            return '[GNU License](https://choosealicense.com/licenses/gpl-3.0/)';
+    }
 
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+    switch(license){
+        case 'None':
+            return '';
+        case 'MIT': 
+            return `
+            Permissions	
+            - Commercial use
+            - Distribution
+            - Modification
+            - Private use
+
+            Conditions
+            - License and copyright notice
+
+            Limitations
+            - Liability
+            - Warranty`; 
+        case 'GNU':
+            return `
+            Permissions	
+            - Commercial use
+            - Distribution
+            - Modification
+            - Patent use
+            - Private use
+            
+            Conditions	
+            - Disclose source
+            - License and copyright notice
+            - Same license
+            - State changes
+            
+            Limitations
+            - Liability
+            - Warranty`
+        case 'Existing Project/Community':
+            return 'Please update this licensing to the current project/community licensing details.'    
+    }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-    return `# ${data.title}
+    return `# ${data.title} ${renderLicenseBadge(data.license)}
 
     ## Description
 
@@ -68,9 +111,9 @@ function generateMarkdown(data) {
     
     ${data.contribute}
 
-    ## Licensing ${renderLicenseBadge(data.license)}
+    ## Licensing
 
-    
+    ${renderLicenseLink(data.license)}
 
     ## Testing
     

@@ -1,6 +1,11 @@
-# Generate Reademe File [MIT](https://img.shields.io/badge/license-MIT-brightgreen)
+# Generate Reademe File ![MIT](https://img.shields.io/badge/license-MIT-brightgreen)
+
+
 
 ## Description
+
+A Nodejs and Inquirer application, which generates a customized and professional README file.
+A user is provided a set of questions via the command line. After all questions have been answered then the new readme file is created.
 
 - There needs to be a way to easily create README files.
 - To create a faster and easier way to build README files.
@@ -11,27 +16,24 @@
     
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
-- [Contribute](#How to Contribute)
+- [Contribute](#Contribute)
 - [License](#license)
 - [Testing](#testing)
 - [Questions?](#questions?)
+- [Resources](#resources)
 
 ## Installation
 
-Run using NODEJS.
+Be sure to download Nodejs. You can find details on downloading and using Node in the resource section below.
 
 ## Usage
 
-NA
+See the GIF below for an example walk through.
+![GIF](./GIF/example.gif)
 
-## Credits
+## Contribute
 
-No Collaborators
-
-## How to Contribute
-    
-Contact me for more details. This is a solo project
+Contact me for more details. This is a solo project for a UWBoot Camp homework assignment.
 
 ## Licensing
 
@@ -58,3 +60,8 @@ Contact me for more details. This is a solo project
 
 Github: (https://github.com/Mike-C-Sanders)
 Email: mike@mikecsanders.com
+
+## Resources
+
+1. [Nodejs](https://nodejs.org/en/)
+2. [Inquirer](https://www.npmjs.com/package/inquirer)

@@ -71,6 +71,11 @@ const questions = [
         type: 'input',
         name: 'test',
         message: 'What tests were written for this application?'
+    },
+    {
+        type: 'input',
+        name: 'fileName',
+        message: 'Using one word, how would you like to name your README file?',
     }
 ];
 
@@ -85,7 +90,7 @@ function init() {
     //initiate the inquirer questions
     promptUser()
     //generate the markdown file using writefilesync
-    .then((answers) = () => fs.writeFileSync('README.md', generateMarkdown(answers)))
+    .then((answers) => fs.writeFileSync(`${answers.fileName}.md`, generateMarkdown(answers)))
     //print to the console that the promise was returned successfully 
     .then(() => console.log('Your Readme File was Successfully Created!'))
     //catch all errors

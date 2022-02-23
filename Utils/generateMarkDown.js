@@ -85,46 +85,46 @@ function generateMarkdown(data) {
     - ${data.solve}
     - ${data.learnings}
 
-    ## Table of Contents
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Contribute](#How to Contribute)
+- [License](#license)
+- [Testing](#testing)
+- [Questions?](#questions?)
+
+## Installation
+
+${data.installation}
+
+## Usage
+
+${data.usage}
+
+## Credits
+
+${data.credits}
+
+## How to Contribute
+
+${data.contribute}
+
+## Licensing
+
+${renderLicenseLink(data.license)}
+
+${renderLicenseSection(data.license)}
+
+## Testing
     
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [How to Contribute](#How to Contribute)
-    - [License](#license)
-    - [Testing](#testing)
-    - [Questions?](#questions?)
+${data.testing}
 
-    ## Installation
+## Questions?
 
-    ${data.installation}
-
-    ## Usage
-
-    ${data.usage}
-
-    ## Credits
-
-    ${data.credits}
-
-    ## How to Contribute
-    
-    ${data.contribute}
-
-    ## Licensing
-
-    ${renderLicenseLink(data.license)}
-
-    ${renderLicenseSection(data.license)}
-
-    ## Testing
-    
-    ${data.testing}
-
-    ## Questions?
-
-    Github: https://github.com/${data.gitHubUser}
-    Email: ${data.email}
+Github: https://github.com/${data.gitHubUser}
+Email: ${data.email}
 `;
 }
 

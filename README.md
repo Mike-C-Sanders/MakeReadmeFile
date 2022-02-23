@@ -28,8 +28,9 @@ Be sure to download Nodejs. You can find details on downloading and using Node i
 
 ## Usage
 
-See the GIF below for an example walk through.
 ![GIF](./GIF/example.gif)
+
+For the whole vide follow this link: [YouTube](https://youtu.be/5F7nkgKVZHs)
 
 ## Contribute
 
